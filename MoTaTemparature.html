@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+
+<script>
+    class Temperature {
+        tempC
+
+        constructor(tempC) {
+            this.tempC = tempC
+        }
+
+        tempF() {
+            return (this.tempC * 1.8) + 32
+        }
+
+        tempK() {
+            return (this.tempC + 273.15)
+        }
+
+    }
+
+    let chuyenDoC = new Temperature(25)
+    let F = chuyenDoC.tempF()
+    let K = chuyenDoC.tempK()
+    console.log(F, K)
+
+</script>
